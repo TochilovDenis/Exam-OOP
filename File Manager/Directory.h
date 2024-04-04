@@ -9,15 +9,15 @@ public:
 	void Create(const string& path) {
 		if (!fs::exists(path)) {
 			fs::create_directories(path);
-			cout << "Директория_ " << path << " _создана." << endl;
+			cout << "Директория " << path << " создана." << endl;
 		}
 		else {
-			cout << "Директория_ " << path << " _уже существует." << endl;
+			cout << "Директория " << path << " уже существует." << endl;
 		}
 	}
 	void Delete(const string& path) {
 		uintmax_t n = fs::remove_all(path);
-		cout << "Удалено_ " << n << " _файлов или директорий" << endl;
+		cout << "Удалено " << n << " файлов или директорий" << endl;
 	}
 	void Rename(const string& oldPath, const string& newPath) {
 		try {
