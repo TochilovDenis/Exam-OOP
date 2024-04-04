@@ -120,7 +120,6 @@ public:
 		return attemptsLeft;
 	}
 	string LoadRandomWord(string path) {
-		int lineCount = 0;
 		string word;
 		vector<string> v;
 		ifstream reader(path);
