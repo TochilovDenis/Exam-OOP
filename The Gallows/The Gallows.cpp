@@ -9,7 +9,7 @@ int main()
 	Chrono time;
 	Game game;
 
-	string guesses = "";
+	string guesses = " ";
 	string wordToGueses;
 	wordToGueses = game.LoadRandomWord("words.txt");
 	int maxTries = 10;
