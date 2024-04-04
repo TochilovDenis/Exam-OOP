@@ -10,5 +10,5 @@ private:
 public:
     Chrono() : startTime(steady_clock::now()) {}
     duration<double> elapsed() const { return steady_clock::now() - startTime; }
-    void PrintTime() const { cout << "Затраченное время: " << elapsed().count() << " секунд" << endl; }
+    void PrintTime() const { std::cout << "Затраченное время: " << elapsed().count() << " секунд" << std::endl; }
 };
