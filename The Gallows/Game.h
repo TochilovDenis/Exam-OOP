@@ -1,4 +1,4 @@
-#pragma once
+п»ї#pragma once
 #include "Chrono.h"
 #include <cctype>
 #include <ctime>
@@ -91,12 +91,12 @@ public:
 		PrintMessenge(s, false, false);
 	}
 	void PrintAviableLetters(string token) {
-		PrintMessenge("Доступные слова.");
+		PrintMessenge("Р”РѕСЃС‚СѓРїРЅС‹Рµ СЃР»РѕРІР°.");
 		PrintLetters(token, 'A', 'M');
 		PrintLetters(token, 'N', 'Z');
 	}
 	bool PrintWordAndCheckWin(string word, string guesses) {
-		PrintMessenge("Угадай слово.");
+		PrintMessenge("РЈРіР°РґР°Р№ СЃР»РѕРІРѕ.");
 		bool won = true;
 		string s;
 
@@ -114,7 +114,7 @@ public:
 		return won;
 	}
 	int AttemptsLeft(int maxTries, int tries) {
-		PrintMessenge("Осталось попыток:", false, false);
+		PrintMessenge("РћСЃС‚Р°Р»РѕСЃСЊ РїРѕРїС‹С‚РѕРє:", false, false);
 		int attemptsLeft = maxTries - tries;
 		PrintMessenge(to_string(attemptsLeft), false);
 		return attemptsLeft;
