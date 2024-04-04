@@ -133,6 +133,7 @@
   <ItemGroup>
     <ClInclude Include="Directory.h" />
     <ClInclude Include="File.h" />
+    <ClInclude Include="Filemanadger.h" />
     <ClInclude Include="FileSystemObject.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
