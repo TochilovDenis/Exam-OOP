@@ -8,6 +8,7 @@
 #include <windows.h>
 using namespace std;
 
+
 class Game {
 public:
 	void PrintMessenge(string message, bool printTop = true, bool printBottom = true) {
